@@ -1,0 +1,638 @@
+programa
+{
+	
+	inclua biblioteca Texto --> t
+	inclua biblioteca Util--> u
+	
+	cadeia nome
+	inteiro decisao
+	logico venceu
+	
+	funcao inicio()
+	{
+		
+ 		//criaçao do personagem
+		escrevaMaquina("Você é um perito criminal cibernético de sucesso.\n", 50)
+		escrevaMaquina("Antes de começar sua história, me responda uma pergunta \n", 50)
+		escrevaMaquina("Qual o seu nome? \n", 50)
+		leia(nome)
+		escrevaMaquina("Perfeito! Pronto para a sua aventura como o melhor detetive do mundo? (não, você não é o Batman) \n", 50)
+		escrevaMaquina("3... \n2... \n1... \njá! \n", 250)
+		AguardeLimpe(500)
+
+		//historia
+
+		escreva(" ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░       ░▒▓███████▓▒░░▒▓████████▓▒░▒▓████████▓▒░▒▓████████▓▒░▒▓██████▓▒░▒▓████████▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░  \n")
+		escreva("░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         \n")
+		escreva("░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░         \n")
+		escreva("░▒▓█▓▒░       ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓██████▓▒░ ░▒▓███████▓▒░       ░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░    ░▒▓█▓▒░   ░▒▓██████▓▒░░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒▒▓█▓▒░░▒▓██████▓▒░    \n")
+		escreva("░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░        ░▒▓█▓▒░   ░▒▓█▓▒░ ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░         \n")
+		escreva("░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░   ░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▒░   ░▒▓█▓▒░ ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░         \n")
+		escreva(" ░▒▓██████▓▒░   ░▒▓█▓▒░   ░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░░▒▓████████▓▒░  ░▒▓█▓▒░   ░▒▓████████▓▒░▒▓██████▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░  ░▒▓██▓▒░  ░▒▓████████▓▒░  \n")
+		AguardeLimpe(3000)
+
+		escrevaMaquina("\"Era meu aniversário de 5 anos. Era um dia bom, ao menos era o que parecia, \n", 50)
+		escrevaMaquina("mas eu ainda sentia que algo estava errado, e realmente estava. \n", 50)
+		escrevaMaquina("A minha família parecia estar escondendo algo de mim, \n", 50)
+		escrevaMaquina("não estavam me deixando entrar na cozinha, eu achei que era um bolo, mas quando eu entrei... \"\n\n", 50)
+		escrevaMaquina("***VOCÊ ACORDA***\n\n", 50)
+		escrevaMaquina("\"Mais uma vez esse pesadelo?\" \n", 50)
+		AguardeLimpe(500)
+
+		//uma decisao que pode te ajudar mais para frente
+		acordar()
+
+		//trabalho
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Olá " + nome + ", temos um serviço para você\" \n\n", 50)
+		
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Qual serviço?\" \n\n", 50)
+
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Precisamos de você para sabermos se as informações do nosso cliente foram clonadas, podemos contar com sua ajuda?\"\n", 50)
+		
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Claro que sim, vou terminar ainda hoje!\" \n\n", 50)
+		AguardeLimpe(500)
+		
+		escrevaMaquina("*Você liga seu computador*\n", 50)
+
+		//senha que foi entregue no começo do jogo
+		colocarSenha()
+
+		//primeiro trabalho
+		escrevaMaquina("*Computador possivelmente clonado* \n", 50)
+		
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Primeiro eu vou abrir o terminal... E agora?\" \n\n", 50)
+
+		logico continuar = verdadeiro
+		
+		enquanto(continuar == verdadeiro){
+			
+			escrevaMaquina("1- ls			2- cd / \n", 50)
+			escrevaMaquina("3- access_log		4- help \n", 50)
+			leia(decisao)
+
+			escolha(decisao){
+				
+				caso 1:
+					escrevaMaquina("- /Users \n", 50)
+					escrevaMaquina("- /System \n", 50)
+					escrevaMaquina("- /Logs \n", 50)
+					escrevaMaquina("- /Temp \n", 50)
+					
+					escrevaMaquina("1- cd /Users			2- open /Logs \n", 50)
+					escrevaMaquina("3- acess Logs			4- cd /Logs \n", 50)
+					leia(decisao)
+
+					escolha(decisao){
+
+						caso 1:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						caso 2:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						caso 3:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						caso 4:
+							escrevaMaquina("- syslog.txt \n", 50)
+							escrevaMaquina("- access.log \n", 50)
+							escrevaMaquina("- firewall.log \n", 50)
+
+							escrevaMaquina("1- syslog.txt			2- access.log \n", 50)
+							escrevaMaquina("3- firewall.log \n", 50)
+							leia(decisao)
+
+							escolha(decisao){
+								caso 1:
+									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									pare
+
+								caso 2:
+									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									pare
+
+								caso 3:
+									escrevaMaquina("*Você encontrou múltiplos acessos remotos incomuns à 01:43h da manhã, usando \n", 50)
+									escrevaMaquina(" usuário \"admin\", via protocolo SSH* \n\n", 50)
+
+									escrevaMaquina("*Possível evidência de acesso indevido.* \n\n", 50)
+
+									continuar = falso
+									
+									pare
+							}
+							
+					
+					}
+
+				caso 2:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+
+				caso 3:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+
+				caso 4:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+			
+			}
+
+		}
+
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"E então " + nome + ", conseguiu descobrir se a conta foi clonada?\" \n\n", 50)
+
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"É bem provável. Houveram diversos acessos simultâneos durante a madrugada.\" \n\n", 50)
+
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Agradeço pela ajuda, agora podemos continuar com uma investigação mais detalhada sobre o caso!\n", 50)
+		escrevaMaquina("Você já pode ir para casa.\" \n\n", 50)
+
+		escreva("                                                                               ..:~7?????5YYY?~:       .:^^^^^~~^:. \n")
+		escreva("                                                                         :^!?JYY?77!^..  ..:^7J55J~^!JYY?7!7!!7?7JY5J7^. \n")
+		escreva("                                                                     :~?JJ7!~:.                 .^??~:.            .~?55Y7^ \n")
+		escreva("                                                                .~?YP5J~.                                              .^J55J~. \n")
+		escreva("                                                            :!JYGPJ!:                                                      :!J55?^. \n")
+		escreva("                                                         .~JY?~:.                                                              :7PGY~. \n")
+		escreva("                                                      .~Y5?:                                                                      :75GY^ \n")
+		escreva("                                                    ^J55!.                                                                           :?PP7. \n")
+		escreva("                                                  ~YY!.                                                                                 ^75Y^ \n")
+		escreva("                                                ~5J^                                                                                       ~55~ \n")
+		escreva("                                              ~YY^                                                                                           ^Y5~ \n")
+		escreva("                                            !55~                                                                                               ^PP^ \n")
+		escreva("                                          ~PB!                                                                                                   7GY. \n")
+		escreva("                                        .YP7:                                                                                                     .?P7 \n")
+		escreva("                                       ^P?.                                                                                                         ^PY. \n")
+		escreva("                                      !B~                                                                                                             !Y~ \n")
+		escreva("                                     !#~                                                                                                               .JJ: \n")
+		escreva("                                    7#^                                                                                                                  ~57 \n")
+		escreva("                                   !#~                                                                                                                    .5P. \n")
+		escreva("                                  ^B^                                                                                                                       JB^ \n")
+		escreva("                                 ^5^                                                             ~. .                                                        7G: \n")
+		escreva("                                :J.                                                             .P: !:                .                                       ?#7 \n")
+		escreva("                               :G^                                                              .B7 7J           !^  .Y.                                       J&7 \n")
+		escreva("                               57                                                          :    .#? ^#^          PJ  :&!                                        5@! \n")
+		escreva("                              7J                                                      .   .G:   :#Y .YY         .BY~  GB                                        .P&^ \n")
+		escreva("                              5:                                                     :^   5&:   .P5~!?!!         P!5^ !@?                                        .B#. \n")
+		escreva("                             !J                                        !^           ^J  .PJG?   .P^YJPJ7~        ?Y^P. 5&:                                        ^&5 \n")
+		escreva("                            ~Y!                                       JP       .:^:!B: :P7 ^B^   P^.5YJ7Y^       !&7PB^!@P                                         7@! \n")
+		escreva("                           :7!~                                     :5P.  :7YPB##@@&! ~G!   !G:  ?Y .7:77G^      ?#@#&@#&@P:                                        5#. \n")
+		escreva("                           J^~J                                    ^P?:~JPGPY?~~P@G:.J5~     !G^ .G.    :~P^      ^&J.?#@GG&Y^.                                     :#? \n")
+		escreva("                          .P..P.                                  ~5!!!7~:    !G&Y.!P7        ~G~ 7?      :G!      7#~ :JP^!GG~                                      7#. \n")
+		escreva("                          !P  !!                                 ?Y^7.     .!5GB7~YJ:          :PJ.Y7      :GJ      ~B~  ^7: 7P~                                     .#7 \n")
+		escreva("                          5Y   ^.                              :Y7:7.   .^!JJ75Y7!.              75?G~      .Y5^     ^G7   .  ^JY~                                    JJ \n")
+		escreva("                          G7                                  !Y^.!  .^~!!~:^J7:                  .!5B~       ^?!:.   .Y5.   .  ~G5:                                 .^P \n")
+		escreva("                          G^                                ^Y7 ^7~7?Y?!^^:.:.                       :7~        .~J?~:. ?P~ .:^^~!PG5?:                       ..     J?G \n")
+		escreva("                          P:                               ?P^ ?P!~^.7:  .  ^Y .. .!.                  .           ~J!7?7J&?  :  !~ :?GJ^.                    .7     PB? \n")
+		escreva("                          5^                            .~Y@~^7! ~~..7B?~?!!JP!??JPP^..                         ..:^P5????PPJ7?!YG~::7~5&#?.                   J!    P#. \n")
+		escreva("                          Y^                          .!?~:#7:YPPPP7^::^:...     ...:^^~!:                    ^!~^:...         ...:^7PPBG?!77^.                ^P    P7 \n")
+		escreva("                          J!        .:              :7?^   JG  .^~.     ^~^:.           ~?.                  ^?^           :^~~      ::Y^   .::                .B:   G~ \n")
+		escreva("                          ??        !:          :^!P!.     :#:                           .                                            ^J                        57  :P \n")
+		escreva("                          7P        5^       ..::: P5       57                                                                        5^                        7P  ?J \n")
+		escreva("                          :G.       5!             ~@~      !G                                                                       7J                         ~B  P: \n")
+		escreva("                           ?7       J?              PG      .B!                                                                     :G:       ..                :#.!Y \n")
+		escreva("                           .G:      ~P              :&~      Y5                                                                     JJ        !.                .#!5^ \n")
+		escreva("                            ?P.     .G:              ?P      ^#.                               ~!7~^                               :5.       .J.                 BB~ \n")
+		escreva("                             PP      YJ               G~      57                               !7JJ~                               5~        7J                  G? \n")
+		escreva("                             .B?     ^P               ~P      ^B.                       .!               ^^                       7Y        :G:                  P! \n")
+		escreva("                              ~#~     Y:               P7      PY                       .GP!.         .^7B7                      ^P.        P5                  .B^ \n")
+		escreva("                               7#^    7Y               ^G.     ^#:                        ^7^        :?7~.                       P!        YP?                  !B. \n")
+		escreva("                                !B^   .G.               ?Y      55                                                              ?Y        J?!?                  BJ \n")
+		escreva("                                 ~G!   7J                5!     .#~                                                            :P.       J? Y:                 JG \n")
+		escreva("                                  :PJ   Y^               .G~     ?#.                                                           ?^       Y7 .P                 7B: \n")
+		escreva("                                   .Y5: .5..:             ^#~     B5                                                          !5      .5!  !P                !B^ \n")
+		escreva("                                     ~5?:!Y.Y.             !B^    ^#7                                                        ~G:     ^G7   57               7G^ \n")
+		escreva("                                       ~YYP~!J              ^P7    :G!             ^!7!~~~!777!7??7!^:.........             ~B^     ?G~   :B:             .YY. \n")
+		escreva("                                         ^?G!J?              .Y5:   :BJ            Y@@&??J?!~~~~!7?7!~^^7?7?5&P            7#^    ^YY:    JP             ^5! \n")
+		escreva("                                           .?J#5   :.          !PJ:  ^&B!           ?&@?7!!!.       .~!7JJJPP?:          ^5&!   ^JY^     :B^            75^ \n")
+		escreva("                                             ^J#P. .?.          .!Y!: ^BG5~          :5J             :::^7Y7.          ^JY57 .~?7:       GY           ^Y\n")
+		escreva("                                               :GG. ^5^            ^J?^~Y~JY!.         :.   .~~^^~~^::^~~^          .7P5~77^77~.       .PY          ^??:\n")
+		escreva("                                                 Y#~ ^G7            .5!~JY^^J5?^             ...:::...            :7P?:^J?7~:         ~G?    ..  .~J?:\n")
+		escreva("                                                  7BY: YY.           ^P: ~!. .~JY7:        ^!~^::..            .!Y57. ^7~.           ?G!    ~7 :!J7:\n")
+		escreva("                                                   :?GJ.!5!           ~P~       .~J?!:       ....           .!Y5?:                 ^5?.   :?7~??^\n")
+		escreva("                                                     .?57^?J^^^        :57         .~?J7~.               :!?Y7^                  .JP^   .JB5J7:\n")
+		escreva("                                                       .!YJ?J?7?^        ?Y:          .^!?7!~^.....:^~7JYJ7:                   :75J  .^JPY!:\n")
+		escreva("                                                          :~!!!7YY!.      ^Y7.            .^77!!!!!!~~~^.                    ^?5J~:~!!7^.\n")
+		escreva("                                                              ...^!77~:     ^7~                                           .75PJ!~^:.\n")
+		escreva("                                                                    .^7??7!~~^7Y~                                        .::..\n")
+		escreva("                                                                        ..:^^^::. \n")
+		AguardeLimpe(5000)
+
+		escrevaMaquina("*Você vai para casa, faz tudo que deve fazer, e dorme*\n", 50)
+		escrevaMaquina("*Dia seguinte*\n", 50)
+
+		acordar()
+
+		//trabalho
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Olá " + nome + ", temos mais um serviço para você\" \n\n", 50)
+
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Qual serviço?\" \n\n", 50)
+
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Nós estamos trabalhando com a polícia, e recebemos uma mensagem criptografada que eles interceptaram. \n", 50)
+		escrevaMaquina("Podemos  contar com você?\" \n\n", 50)
+
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"É claro, me passa a mensagem.\" \n\n", 50)
+
+		escrevaMaquina("\"---pu wlqwlq \n", 50)
+		escrevaMaquina("ehfr dwudv gd txlqwd dyhqlgd frp d slqh vwuhhw krmh d qrlwh\"\n\n", 50)
+
+		continuar = verdadeiro
+		
+		enquanto(continuar == verdadeiro){
+
+			escrevaMaquina("Quem enviou a mensagem? \n\n", 50)
+			escrevaMaquina("1- Mr Tintin			2- Sr Logica \n", 50)
+			escrevaMaquina("3- Ms Valeska		4- Dr Estranho \n", 50)
+			leia(decisao)
+
+			escolha(decisao){
+				
+				caso 1:
+					escrevaMaquina("E onde é a reunião? \n\n", 50)
+					
+					escrevaMaquina("1- Supermercado			2- Loja de sapatos  \n", 50)
+					escrevaMaquina("3- Fabrica do Dollynho			4- Beco atrás da 5ª Avenida \n", 50)
+					leia(decisao)
+
+					escolha(decisao){
+
+						caso 1:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						caso 2:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						caso 3:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						caso 4:
+							escrevaMaquina("E quando é a reunião? \n\n", 50)
+
+							escrevaMaquina("1- Hoje à noite		2- Amanhã à tarde \n", 50)
+							escrevaMaquina("3- Domingo à noite", 50)
+							leia(decisao)
+
+							escolha(decisao){
+								caso 1:
+									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									pare
+
+								caso 2:
+									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									pare
+
+								caso 3:
+									escrevaMaquina("*Você encontrou todas as informações necessárias* \n", 50)
+
+									continuar = falso
+									
+									pare
+							}
+							
+					
+					}
+
+				caso 2:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+
+				caso 3:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+
+				caso 4:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+			
+			}
+
+		}
+
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"E então " + nome + ", conseguiu descriptografar a mensagem?\" \n\n", 50)
+
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Sim, te mandei um e-mail com as informações\" \n\n", 50)
+
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Agradeço pela ajuda, agora podemos continuar com uma investigação mais detalhada sobre o caso!\n", 50)
+		escrevaMaquina("Você já pode ir para casa.\" \n\n", 50)
+		AguardeLimpe(1000)
+
+		escrevaMaquina("*Você vai para casa, faz tudo que deve fazer, e dorme*\n", 50)
+		escrevaMaquina("*Dia seguinte*\n", 50)
+
+		acordar()
+
+		//trabalho dia 3
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Olá " + nome + ", temos outro serviço para você\" \n\n", 50)
+		
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Qual serviço?\" \n\n", 50)
+
+		escrevaMaquina("Katherine(Blue Team): \n", 50)
+		escrevaMaquina("\"Temos mais um possivel HD clonado.\"\n", 50)
+		
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Mais um? Acho que está acabando a criatividade do roteirista...\" \n\n", 50)
+		AguardeLimpe(500)
+		
+		escrevaMaquina("*Você liga seu computador*\n", 50)
+
+		//senha que foi entregue no começo do jogo
+		colocarSenha()
+
+		//primeiro trabalho
+		escrevaMaquina("*Computador possivelmente clonado*", 50)
+		
+		escrevaMaquina(nome + ": \n", 50)
+		escrevaMaquina("\"Qual diretorio eu abro para investigar?\" \n\n", 50)
+
+		continuar = verdadeiro
+		
+		enquanto(continuar == verdadeiro){
+			
+			escrevaMaquina("1- /documentos_pessoais/			2- /trabalho/ / \n", 50)
+			escrevaMaquina("3- /downloads/		4- /ocultos/.logs/ \n", 50)
+			leia(decisao)
+
+			escolha(decisao){
+
+				caso 1:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+					
+				caso 2:
+					escrevaMaquina("Arquivos encontrados em /trabalho/: \n", 50)
+					
+					escrevaMaquina("1- notas_fiscais.xlsx			2- frag_rot13.msg \n", 50)
+					escrevaMaquina("3- dados_brutos.csv \n", 50)
+					leia(decisao)
+
+					escolha(decisao){
+
+						caso 1:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						caso 2:
+							escrevaMaquina("Conteúdo de frag_rot13.msg: \n\n", 50)
+							escrevaMaquina("d uhxqldr hk xpd dupdglokd \n", 50)
+							escrevaMaquina("frqvlghuh lvvr xp suhvhqwh \n", 50)
+							escrevaMaquina("O que diz na mensagem? \n\n", 50)
+
+							escrevaMaquina("1- O primeiro tds eh a melhor turma			2- voce perdeu o jogo \n", 50)
+							escrevaMaquina("3- a reuniao eh uma armadilha", 50)
+							leia(decisao)
+
+							escolha(decisao){
+								caso 1:
+									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									venceu = falso
+									pare
+
+								caso 2:
+									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									venceu = falso
+									pare
+
+								caso 3:
+									escrevaMaquina("*Você não encontrou evidencias de clonagem, mas sim algo pior* \n", 50)
+
+									escrevaMaquina(nome + ": \n", 50)
+									escrevaMaquina("\"EU TENHO QUE AVISAR ELES!\" \n\n", 50)
+
+									continuar = falso
+									venceu = verdadeiro
+									
+									pare
+							}
+
+						caso 3:
+							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							pare
+
+						
+							
+					
+					}
+
+				
+
+				caso 3:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+
+				caso 4:
+					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					pare
+			
+			}
+
+		}
+
+		AguardeLimpe(500)
+
+		se(venceu == verdadeiro){
+
+			escrevaMaquina("Katherine(Blue Team): \n", 50)
+			escrevaMaquina("\"E então, achou algo?\"\n\n", 50)
+
+			escrevaMaquina(nome + ": \n", 50)
+			escrevaMaquina("\"É UMA ARMADILHA! A REUNIÃO É UMA ARMADILHA!\" \n\n", 50)
+
+			escrevaMaquina("Katherine(Blue Team): \n", 50)
+			escrevaMaquina("\"Não pode ser... Vou ligar pra eles e avisar!\"\n\n", 50)
+
+			escrevaMaquina(". \n . \n . \n\n", 500)
+
+			escrevaMaquina("Katherine(Blue Team): \n", 50)
+			escrevaMaquina("\"Eles não estão atendendo, preciso ir avisa-los!\"\n\n", 50)
+
+			escrevaMaquina("*Katherine conseguiu avisar os policias à tempo, parabéns!* \n\n", 50)
+			AguardeLimpe(500)
+		
+
+			escreva("░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓████████▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva("░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva(" ░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░              ░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva(" ░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓██████▓▒░         ░▒▓█▓▒▒▓█▓▒░░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva("  ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░               ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva("  ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░               ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░       \n")
+			escreva("   ░▒▓██▓▒░   ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓████████▓▒░         ░▒▓██▓▒░  ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓████████▓▒░░▒▓██████▓▒░░▒▓█▓▒░ \n")
+
+		}senao{
+
+			escrevaMaquina("Katherine(Blue Team): \n", 50)
+			escrevaMaquina("\"E então, achou algo?\"\n\n", 50)
+
+			escrevaMaquina(nome + ": \n", 50)
+			escrevaMaquina("\"Não, não tinha nada no computador\" \n\n", 50)
+
+			escrevaMaquina("Katherine(Blue Team): \n", 50)
+			escrevaMaquina("\"Que bom, então não tenho mais nada para você hoje, pode ir para casa.\"\n\n", 50)
+			AguardeLimpe(500)
+			
+
+			escreva("░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓████████▓▒░      ░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva("░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva(" ░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva(" ░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓██████▓▒░        ░▒▓███████▓▒░░▒▓██████▓▒░ ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva("  ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░             ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░ \n")
+			escreva("  ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░       \n")
+			escreva("   ░▒▓██▓▒░   ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓████████▓▒░      ░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓████████▓▒░░▒▓██████▓▒░░▒▓█▓▒░ \n")
+
+		}
+		
+	}
+	
+	funcao AguardeLimpe(inteiro tempo){
+		u.aguarde(tempo)
+		limpa()
+	}
+
+	funcao escrevaMaquina(cadeia texto, inteiro velocidade){
+
+		para(inteiro i=0; i < t.numero_caracteres(texto); i++){
+
+			escreva(t.obter_caracter(texto, i))
+			u.aguarde(velocidade)
+		}
+	}
+	
+	funcao acordar(){
+		
+		//esta escolha pode ou começar o jogo, ou contar mais sobre a historia
+
+		logico continuar = verdadeiro
+		
+		enquanto(continuar == verdadeiro){
+			
+
+			escrevaMaquina("1- Ir ao trabalho		2- Ir ao banheiro \n", 50)
+			leia(decisao)
+			
+			escolha(decisao){
+
+				caso 1:
+					escrevaMaquina("Tem certeza? nojento, mas ok \n", 50)
+					AguardeLimpe(500)
+										
+					escrevaMaquina("*você vai ao trabalho, fedendo, mas vai* \n", 50)
+
+					continuar = falso
+						
+					pare
+
+				caso 2:
+					escrevaMaquina("Boa escolha \n", 50)
+					escrevaMaquina("*Você escova os dentes, toma café e toma um banho*\n", 50)
+					escrevaMaquina("1- Ir ao trabalho		2- explorar mais a casa \n", 50)
+					leia(decisao)
+	
+					escolha(decisao){
+	
+						caso 1:
+							AguardeLimpe(500)
+							escrevaMaquina("*Você vai ao trabalho* \n", 50)
+							
+							continuar = falso
+							
+							pare
+	
+						caso 2:
+							escrevaMaquina("**Você vê uma foto do seu aniversário de 5 anos** \n", 50)
+							escrevaMaquina("\"Me desculpem... Pai... Mãe...\"\n", 50)
+							
+							escrevaMaquina("1- Ir ao trabalho		2- explorar mais a casa \n", 50)
+							leia(decisao)
+	
+							escolha(decisao){
+
+								caso 1:
+									AguardeLimpe(500)
+									escrevaMaquina("*Você vai ao trabalho* \n", 50)
+
+									continuar = falso
+									
+									pare
+	
+								caso 2:
+									escrevaMaquina("**Você vê um papel com algo anotado** \n", 50)
+									escrevaMaquina("\"Senha: Açúcar\"\n", 50)
+									AguardeLimpe(500)
+									
+									escrevaMaquina("*Você vai ao trabalho* \n", 50)
+
+									continuar = falso
+									
+									pare
+
+								caso contrario:
+									escrevaMaquina("Informação inválida, recomeçando... \n", 50)
+									pare
+							}
+							
+
+						caso contrario:
+							escrevaMaquina("Informação inválida, recomeçando... \n", 50)
+							pare
+			
+					}
+
+					caso contrario:
+						escrevaMaquina("Informação inválida, recomeçando... \n", 50)
+						pare
+		
+			
+			}
+		
+		}
+
+	}
+
+	funcao colocarSenha(){
+
+		logico continuar = verdadeiro
+
+		cadeia senha
+		
+		enquanto(continuar == verdadeiro){
+
+			//Senha que foi dada no comeco
+			escrevaMaquina("Senha: ", 50)
+			leia(senha)
+		
+			se(senha == "Açúcar"){
+				
+				escrevaMaquina("Acesso autorizado \n", 50)
+				continuar = falso
+				
+			}senao{
+				
+				escrevaMaquina("Acesso negado \n", 50)
+				
+			}
+		}
+	}
+	
+}
