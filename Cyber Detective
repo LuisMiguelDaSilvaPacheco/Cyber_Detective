@@ -20,6 +20,7 @@ programa
 		leia(nome)
 		escrevaMaquina("Perfeito! Pronto para a sua aventura como o melhor detetive do mundo? (não, você não é o Batman) \n", 50)
 		escrevaMaquina("3... \n2... \n1... \njá! \n", 250)
+		limpa()
 		
 		//historia
 
@@ -56,7 +57,7 @@ programa
 		escrevaMaquina("\"Qual serviço?\" \n\n", 50)
 
 		escrevaMaquina("Katherine(Blue Team): \n", 50)
-		escrevaMaquina("\"Precisamos de você para sabermos se as informações do nosso cliente foram clonadas, podemos contar com sua ajuda?\"\n", 50)
+		escrevaMaquina("\"Precisamos de você para sabermos se as informações do nosso cliente foram clonadas, podemos contar com sua ajuda?\"\n\n", 50)
 		
 		escrevaMaquina(nome + ": \n", 50)
 		escrevaMaquina("\"Claro que sim, vou terminar ainda hoje!\" \n\n", 50)
@@ -65,13 +66,13 @@ programa
 		leia(enter)
 		limpa()
 		
-		escrevaMaquina("*Você liga seu computador*\n", 50)
+		escrevaMaquina("*Você liga seu computador*\n\n", 50)
 
 		//senha que foi entregue no começo do jogo
 		colocarSenha()
 
 		//primeiro trabalho
-		escrevaMaquina("*Computador possivelmente clonado* \n", 50)
+		escrevaMaquina("*Computador possivelmente clonado* \n\n", 50)
 		
 		escrevaMaquina(nome + ": \n", 50)
 		escrevaMaquina("\"Primeiro eu vou abrir o terminal... E agora?\" \n\n", 50)
@@ -81,7 +82,7 @@ programa
 		enquanto(continuar == verdadeiro){
 			
 			escrevaMaquina("1- ls			2- cd / \n", 50)
-			escrevaMaquina("3- access_log		4- help \n", 50)
+			escrevaMaquina("3- access_log		4- help \n\n", 50)
 			leia(decisao)
 
 			escolha(decisao){
@@ -90,42 +91,42 @@ programa
 					escrevaMaquina("- /Users \n", 50)
 					escrevaMaquina("- /System \n", 50)
 					escrevaMaquina("- /Logs \n", 50)
-					escrevaMaquina("- /Temp \n", 50)
+					escrevaMaquina("- /Temp \n\n", 50)
 					
 					escrevaMaquina("1- cd /Users			2- open /Logs \n", 50)
-					escrevaMaquina("3- acess Logs			4- cd /Logs \n", 50)
+					escrevaMaquina("3- acess Logs			4- cd /Logs \n\n", 50)
 					leia(decisao)
 
 					escolha(decisao){
 
 						caso 1:
-							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 							pare
 
 						caso 2:
-							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 							pare
 
 						caso 3:
-							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 							pare
 
 						caso 4:
 							escrevaMaquina("- syslog.txt \n", 50)
-							escrevaMaquina("- access.log \n", 50)
-							escrevaMaquina("- firewall.log \n", 50)
+							escrevaMaquina("- firewall.log  \n", 50)
+							escrevaMaquina("- access.log \n\n", 50)
 
-							escrevaMaquina("1- syslog.txt			2- access.log \n", 50)
-							escrevaMaquina("3- firewall.log \n", 50)
+							escrevaMaquina("1- syslog.txt			2- firewall.log \n", 50)
+							escrevaMaquina("3- access.log \n\n", 50)
 							leia(decisao)
 
 							escolha(decisao){
 								caso 1:
-									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 									pare
 
 								caso 2:
-									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 									pare
 
 								caso 3:
@@ -147,15 +148,15 @@ programa
 					}
 
 				caso 2:
-					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 					pare
 
 				caso 3:
-					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 					pare
 
 				caso 4:
-					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 					pare
 			
 			}
@@ -245,8 +246,8 @@ programa
 		leia(enter)
 		limpa()
 
-		escrevaMaquina("*Você vai para casa, faz tudo que deve fazer, e dorme*\n", 50)
-		escrevaMaquina("*Dia seguinte*\n", 50)
+		escrevaMaquina("*Você vai para casa, faz tudo que deve fazer, e dorme*\n\n", 50)
+		escrevaMaquina("*Dia seguinte*\n\n", 50)
 
 		acordar()
 
@@ -356,8 +357,8 @@ programa
 		leia(enter)
 		limpa()
 
-		escrevaMaquina("*Você vai para casa, faz tudo que deve fazer, e dorme*\n", 50)
-		escrevaMaquina("*Dia seguinte*\n", 50)
+		escrevaMaquina("*Você vai para casa, faz tudo que deve fazer, e dorme*\n\n", 50)
+		escrevaMaquina("*Dia seguinte*\n\n", 50)
 
 		acordar()
 
@@ -378,13 +379,13 @@ programa
 		leia(enter)
 		limpa()
 		
-		escrevaMaquina("*Você liga seu computador*\n", 50)
+		escrevaMaquina("*Você liga seu computador*\n\n", 50)
 
 		//senha que foi entregue no começo do jogo
 		colocarSenha()
 
 		//primeiro trabalho
-		escrevaMaquina("*Computador possivelmente clonado*", 50)
+		escrevaMaquina("*Computador possivelmente clonado*\n\n", 50)
 		
 		escrevaMaquina(nome + ": \n", 50)
 		escrevaMaquina("\"Qual diretorio eu abro para investigar?\" \n\n", 50)
@@ -394,26 +395,26 @@ programa
 		enquanto(continuar == verdadeiro){
 			
 			escrevaMaquina("1- /documentos_pessoais/			2- /trabalho/ / \n", 50)
-			escrevaMaquina("3- /downloads/		4- /ocultos/.logs/ \n", 50)
+			escrevaMaquina("3- /downloads/		4- /ocultos/.logs/ \n\n", 50)
 			leia(decisao)
 
 			escolha(decisao){
 
 				caso 1:
-					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 					pare
 					
 				caso 2:
-					escrevaMaquina("Arquivos encontrados em /trabalho/: \n", 50)
+					escrevaMaquina("Arquivos encontrados em /trabalho/: \n\n", 50)
 					
 					escrevaMaquina("1- notas_fiscais.xlsx			2- frag_rot13.msg \n", 50)
-					escrevaMaquina("3- dados_brutos.csv \n", 50)
+					escrevaMaquina("3- dados_brutos.csv \n\n", 50)
 					leia(decisao)
 
 					escolha(decisao){
 
 						caso 1:
-							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 							pare
 
 						caso 2:
@@ -423,22 +424,22 @@ programa
 							escrevaMaquina("O que diz na mensagem? \n\n", 50)
 
 							escrevaMaquina("1- O primeiro tds eh a melhor turma			2- voce perdeu o jogo \n", 50)
-							escrevaMaquina("3- a reuniao eh uma armadilha", 50)
+							escrevaMaquina("3- a reuniao eh uma armadilha\n\n", 50)
 							leia(decisao)
 
 							escolha(decisao){
 								caso 1:
-									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 									venceu = falso
 									pare
 
 								caso 2:
-									escrevaMaquina("Resposta errada, tente novamente \n", 50)
+									escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 									venceu = falso
 									pare
 
 								caso 3:
-									escrevaMaquina("*Você não encontrou evidencias de clonagem, mas sim algo pior* \n", 50)
+									escrevaMaquina("*Você não encontrou evidencias de clonagem, mas sim algo pior* \n\n", 50)
 
 									escrevaMaquina(nome + ": \n", 50)
 									escrevaMaquina("\"EU TENHO QUE AVISAR ELES!\" \n\n", 50)
@@ -450,7 +451,7 @@ programa
 							}
 
 						caso 3:
-							escrevaMaquina("Resposta errada, tente novamente \n", 50)
+							escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 							pare
 
 						
@@ -461,11 +462,11 @@ programa
 				
 
 				caso 3:
-					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 					pare
 
 				caso 4:
-					escrevaMaquina("Resposta errada, tente novamente \n", 50)
+					escrevaMaquina("Resposta errada, tente novamente \n\n", 50)
 					pare
 			
 			}
@@ -492,7 +493,7 @@ programa
 			escrevaMaquina("Katherine(Blue Team): \n", 50)
 			escrevaMaquina("\"Eles não estão atendendo, preciso ir avisa-los!\"\n\n", 50)
 
-			escrevaMaquina("*Katherine conseguiu avisar os policias à tempo, parabéns!* \n\n", 50)
+			escrevaMaquina("**Katherine conseguiu avisar os policias à tempo, parabéns!** \n\n", 50)
 
 			escrevaMaquina("**Pressione enter**", 50)
 			leia(enter)
@@ -560,22 +561,22 @@ programa
 			escolha(decisao){
 
 				caso 1:
-					escrevaMaquina("Tem certeza? nojento, mas ok \n", 50)
+					escrevaMaquina("Tem certeza? nojento, mas ok \n\n", 50)
 
 					escrevaMaquina("**Pressione enter**", 50)
 					leia(enter)
 					limpa()
 										
-					escrevaMaquina("*você vai ao trabalho, fedendo, mas vai* \n", 50)
+					escrevaMaquina("*você vai ao trabalho, fedendo, mas vai* \n\n", 50)
 
 					continuar = falso
 						
 					pare
 
 				caso 2:
-					escrevaMaquina("Boa escolha \n", 50)
+					escrevaMaquina("Boa escolha \n\n", 50)
 					escrevaMaquina("*Você escova os dentes, toma café e toma um banho*\n", 50)
-					escrevaMaquina("1- Ir ao trabalho		2- explorar mais a casa \n", 50)
+					escrevaMaquina("1- Ir ao trabalho		2- explorar mais a casa \n\n", 50)
 					leia(decisao)
 	
 					escolha(decisao){
@@ -585,17 +586,17 @@ programa
 							leia(enter)
 							limpa()
 					
-							escrevaMaquina("*Você vai ao trabalho* \n", 50)
+							escrevaMaquina("*Você vai ao trabalho* \n\n", 50)
 							
 							continuar = falso
 							
 							pare
 	
 						caso 2:
-							escrevaMaquina("**Você vê uma foto do seu aniversário de 5 anos** \n", 50)
+							escrevaMaquina("**Você vê uma foto do seu aniversário de 5 anos** \n\n", 50)
 							escrevaMaquina("\"Me desculpem... Pai... Mãe...\"\n", 50)
 							
-							escrevaMaquina("1- Ir ao trabalho		2- explorar mais a casa \n", 50)
+							escrevaMaquina("1- Ir ao trabalho		2- explorar mais a casa \n\n", 50)
 							leia(decisao)
 	
 							escolha(decisao){
@@ -605,40 +606,37 @@ programa
 									leia(enter)
 									limpa()
 					
-									escrevaMaquina("*Você vai ao trabalho* \n", 50)
+									escrevaMaquina("*Você vai ao trabalho* \n\n", 50)
 
 									continuar = falso
 									
 									pare
 	
 								caso 2:
-									escrevaMaquina("**Você vê um papel com algo anotado** \n", 50)
-									escrevaMaquina("\"Senha: Açúcar\"\n", 50)
+									escrevaMaquina("**Você vê um papel com algo anotado** \n\n", 50)
+									escrevaMaquina("\"Senha: salameSADIA\"\n\n", 50)
 
 									escrevaMaquina("**Pressione enter**", 50)
 									leia(enter)
 									limpa()
 									
-									escrevaMaquina("*Você vai ao trabalho* \n", 50)
+									escrevaMaquina("*Você vai ao trabalho* \n\n", 50)
 
 									continuar = falso
 									
 									pare
 
 								caso contrario:
-									escrevaMaquina("Informação inválida, recomeçando... \n", 50)
 									pare
 							}
 							
 
 						caso contrario:
-							escrevaMaquina("Informação inválida, recomeçando... \n", 50)
 							pare
 			
 					}
 
 					caso contrario:
-						escrevaMaquina("Informação inválida, recomeçando... \n", 50)
 						pare
 		
 			
@@ -660,17 +658,19 @@ programa
 			escrevaMaquina("Senha: ", 50)
 			leia(senha)
 		
-			se(senha == "Açúcar"){
+			se(senha == "salameSADIA"){
 				
-				escrevaMaquina("Acesso autorizado \n", 50)
+				escrevaMaquina("Acesso autorizado \n\n", 50)
 				continuar = falso
 				
 			}senao{
 				
-				escrevaMaquina("Acesso negado \n", 50)
+				escrevaMaquina("Acesso negado \n\n", 50)
 				
 			}
+			
 		}
+		
 	}
 	
 }
